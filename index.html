@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12291f">
+    <meta name="description" content="Kasb va ko‘nikmalar, O‘zbekiston bo‘ylab sayohat hamda sog‘lom turmush uchun ilhom va amaliy g‘oyalar.">
+    <title>Yangi yo‘l — o‘rganing, sayohat qiling, yaxshi yashang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Yangi yo‘l — bosh sahifa">
+          <span class="brand-mark" aria-hidden="true">y<span>.</span></span>
+          <span class="brand-copy"><strong>yangi yo‘l</strong><small>o‘rgan. kashf et. rivojlan.</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menyuni ochish"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Asosiy navigatsiya">
+          <a href="#career">Kasb va ko‘nikmalar</a>
+          <a href="#travel">Sayohat</a>
+          <a href="#wellbeing">Sog‘lom turmush</a>
+          <a href="#about">Loyiha haqida</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> O‘ZINGIZ UCHUN YANGI IMKONIYATLAR</div>
+          <h1>Har kuni bir qadam<br><span>yaxshiroq</span> hayot sari.</h1>
+          <p class="hero-lede">Yangi ko‘nikma o‘rganing, yurtimizning go‘zal maskanlarini kashf eting va o‘zingizga foydali odatlarni boshlang.</p>
+          <form class="search-form" id="search-form" role="search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <label class="visually-hidden" for="guide-search">Mavzu qidirish</label>
+            <input id="guide-search" type="search" placeholder="Masalan: dasturlash, Samarqand, uyqu..." autocomplete="off">
+            <button type="submit">Izlash <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="popular-searches"><span>Ommabop:</span><button type="button" data-search="dasturlash">Dasturlash</button><button type="button" data-search="Samarqand">Samarqand</button><button type="button" data-search="uyqu">Yaxshi uyqu</button></div>
+          <div class="hero-proof"><span class="proof-check" aria-hidden="true">✓</span><span>O‘rganish, sayohat va farovonlik uchun ilhom bir joyda</span></div>
+        </div>
+        <aside class="hero-card" aria-label="Yangi yo‘l uchun ilhom">
+          <div class="hero-card-top"><span class="tiny-label">BUGUNGI ILHOM</span><span class="live-dot" aria-label="Yangilangan"></span></div>
+          <div class="route-illustration" aria-hidden="true">
+            <div class="route-line"></div><span class="route-node node-one">01</span><span class="route-node node-two">02</span><span class="route-node node-three">03</span>
+            <div class="route-pin">✓</div>
+          </div>
+          <p class="card-kicker">BUGUNGI KICHIK QADAM</p>
+          <h2>Qiziqishingizni<br>yangi mahoratga aylantiring.</h2>
+          <p class="hero-card-text">Katta o‘zgarishlar har kuni qilinadigan kichik tanlovlardan boshlanadi.</p>
+          <a class="text-link" href="#career">O‘rganishni boshlash <span aria-hidden="true">↗</span></a>
+          <div class="hero-card-stamp"><span>✳</span> Ilhom sizdan boshlanadi</div>
+        </aside>
+      </section>
+
+      <section class="trust-strip" aria-label="Sayt yo‘nalishlari">
+        <div class="trust-inner">
+          <div class="trust-item"><span class="trust-icon">01</span><span><strong>Yangi ko‘nikmalar</strong><small>Kelajagingizga sarmoya kiriting</small></span></div>
+          <div class="trust-item"><span class="trust-icon">02</span><span><strong>Yangi manzillar</strong><small>O‘zbekistonni o‘zgacha kashf eting</small></span></div>
+          <div class="trust-item"><span class="trust-icon">03</span><span><strong>Yaxshi odatlar</strong><small>Har kuni o‘zingizga g‘amxo‘rlik qiling</small></span></div>
+        </div>
+      </section>
+
+      <section class="guides-section topic-section" id="career">
+        <div class="section-wrap">
+          <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> 01 · KELAJAGINGIZGA SARMOYA</div><h2>Kasb va ko‘nikmalar</h2><p>Qiziqishingizni talabgir mahorat va yangi imkoniyatlarga aylantiring.</p></div><div class="catalog-count"><strong>01</strong><span>yo‘nalish</span></div></div>
+          <div class="guide-grid" id="career-grid" aria-live="polite"></div>
+        </div>
+      </section>
+      <section class="guides-section topic-section topic-alt" id="travel">
+        <div class="section-wrap">
+          <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> 02 · YURTIMIZNI KASHF ETING</div><h2>O‘zbekiston bo‘ylab sayohat</h2><p>Qayerga borishni o‘zingiz tanlang — manzilni qidiring va sayohat g‘oyalarini toping.</p></div><div class="catalog-count"><strong id="travel-count">08</strong><span>manzil</span></div></div>
+          <form class="travel-search" id="travel-search-form" role="search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <label class="visually-hidden" for="travel-search-input">Sayohat manzilini qidirish</label>
+            <input id="travel-search-input" type="search" placeholder="Qaysi shahar yoki hududga bormoqchisiz? Masalan: Xiva..." autocomplete="off">
+            <button type="submit">Manzilni topish <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="travel-suggestions" aria-label="Ommabop sayohat manzillari">
+            <span>G‘oyalar:</span>
+            <button type="button" data-travel-search="Samarqand">Samarqand</button>
+            <button type="button" data-travel-search="Buxoro">Buxoro</button>
+            <button type="button" data-travel-search="Xiva">Xiva</button>
+            <button type="button" data-travel-search="Tog‘">Tog‘lar</button>
+          </div>
+          <div class="guide-grid" id="travel-grid" aria-live="polite"></div>
+          <p class="empty-state travel-empty" id="travel-empty" hidden>Bu nomdagi manzil topilmadi. Shahar yoki viloyat nomini boshqacha yozib ko‘ring.</p>
+        </div>
+      </section>
+      <section class="guides-section topic-section" id="wellbeing">
+        <div class="section-wrap">
+          <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> 03 · O‘ZINGIZGA G‘AMXO‘RLIK</div><h2>Sog‘lom turmush</h2><p>Kundalik hayotga mos, kichik va barqaror odatlarni sinab ko‘ring.</p></div><div class="catalog-count"><strong>03</strong><span>farovonlik</span></div></div>
+          <div class="guide-grid" id="wellbeing-grid" aria-live="polite"></div>
+        </div>
+      </section>
+      <p class="empty-state section-wrap" id="empty-state" hidden>Bu so‘rov bo‘yicha mavzu topilmadi. Boshqa so‘z bilan qidirib ko‘ring.</p>
+
+      <section class="helper-section" id="how-it-works">
+        <div class="helper-inner section-wrap">
+          <div class="helper-copy">
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> MAVZU TOPGICH</div>
+            <h2>Bugun nimaga<br>ilhom kerak?</h2>
+            <p>Kasb o‘rganish, sayohat yoki kundalik farovonlik haqida so‘rang — mos g‘oyalarni topib beramiz.</p>
+            <ul class="helper-points"><li><span>✓</span> Uchala yo‘nalishdan qidiradi</li><li><span>✓</span> Sizga mos maqolalarni ko‘rsatadi</li><li><span>✓</span> Har bir bo‘limga tez o‘tish mumkin</li></ul>
+          </div>
+          <div class="helper-box">
+            <div class="helper-box-head"><span class="helper-avatar">y.</span><span><strong>Yangi yo‘l mavzu topgichi</strong><small>Kasb · sayohat · sog‘lom turmush</small></span><span class="online-label"><i></i> Tayyor</span></div>
+            <div class="chat-messages" id="chat-messages" aria-live="polite" aria-label="Yo‘lko‘rsatgich bilan suhbat">
+              <div class="chat-message assistant-message"><span class="message-avatar">y.</span><p>Salom! Qaysi yo‘nalish sizni qiziqtiradi? Masalan, “dasturlashni o‘rganish”, “Samarqandga sayohat” yoki “uyquni yaxshilash” deb yozing.</p></div>
+            </div>
+            <form class="chat-form" id="chat-form"><label class="visually-hidden" for="chat-input">Savolingiz</label><input id="chat-input" type="text" placeholder="Vaziyatingizni yozing..." maxlength="180" autocomplete="off" required><button type="submit" aria-label="Yuborish">↑</button></form>
+            <p class="chat-disclaimer">Tavsiyalar umumiy ma’lumot uchun, shaxsiy maslahat emas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-section section-wrap" id="how-it-works">
+        <div class="steps-heading"><div class="eyebrow"><span class="eyebrow-dot"></span> YANGI YO‘LNI BOSHLANG</div><h2>O‘zingizga mos yo‘nalishni tanlang</h2></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">⌕</div><h3>Qiziqishingizni tanlang</h3><p>Yangi kasb, sayohat manzili yoki sog‘lom odat haqida o‘ylang.</p></article>
+          <article class="step-card"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">▤</div><h3>G‘oyalarni o‘rganing</h3><p>Qisqa tavsiyalarni o‘qing, o‘zingizga mosini belgilab oling.</p></article>
+          <article class="step-card"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">↗</div><h3>Kichik qadam qo‘ying</h3><p>Bugunoq reja tuzing va uni asta-sekin kundalik odatga aylantiring.</p></article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-inner section-wrap"><div class="about-symbol" aria-hidden="true">“</div><div><div class="eyebrow"><span class="eyebrow-dot"></span> LOYIHA HAQIDA</div><h2>Yaxshi hayot —<br>yangi qiziqishlardan.</h2><p>Yangi yo‘l — kasb va ko‘nikmalar, yurtimizdagi sayohat maskanlari hamda kundalik farovonlik haqida ilhom beruvchi g‘oyalar to‘plami. Bu sahifadagi ma’lumotlar umumiy tanishuv uchun taqdim etiladi.</p><a class="text-link" href="#career">O‘zingizga mos yo‘nalishni tanlang <span aria-hidden="true">↗</span></a></div><div class="about-decoration" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner section-wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark">y<span>.</span></span><span class="brand-copy"><strong>yangi yo‘l</strong><small>o‘rgan. kashf et. rivojlan.</small></span></a><p>O‘rganing · Sayohat qiling · Yaxshi yashang</p><div class="footer-links"><a href="#career">Kasb va ko‘nikmalar</a><a href="#travel">Sayohat</a><a href="#wellbeing">Farovonlik</a></div><small class="copyright">© <span id="current-year"></span> Yangi yo‘l</small></div>
+    </footer>
+
+    <dialog class="guide-dialog" id="guide-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="dialog-close" type="button" aria-label="Oynani yopish">×</button><div class="dialog-category" id="dialog-category"></div><h2 id="dialog-title"></h2><p class="dialog-intro" id="dialog-intro"></p><h3>Sinab ko‘rish uchun g‘oyalar</h3><ol class="dialog-steps" id="dialog-steps"></ol><div class="dialog-source"><span>Qo‘shimcha ma’lumot</span><a id="dialog-source-link" href="#" target="_blank" rel="noopener noreferrer">Manbaga o‘tish ↗</a></div><p class="dialog-warning">Tavsiyalar tanishuv uchun. O‘zingizning sharoitingiz va ehtiyojlaringizga moslab oling.</p><button class="dialog-print" type="button">Chop etish ⤓</button></div></dialog>
+    <script src="app.js" defer></script>
+  </body>
+</html>
